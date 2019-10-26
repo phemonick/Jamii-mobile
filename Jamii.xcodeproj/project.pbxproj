@@ -14,6 +14,7 @@
 		8F9F119423648B6D00B9490D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9F119223648B6D00B9490D /* LaunchScreen.storyboard */; };
 		8F9F119F23648B6E00B9490D /* JamiiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F119E23648B6E00B9490D /* JamiiTests.swift */; };
 		8F9F11AA23648B6E00B9490D /* JamiiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F11A923648B6E00B9490D /* JamiiUITests.swift */; };
+		8F9F11F123649C7300B9490D /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F9F11CC23649C6F00B9490D /* Montserrat-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		8F9F11A523648B6E00B9490D /* JamiiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JamiiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9F11A923648B6E00B9490D /* JamiiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamiiUITests.swift; sourceTree = "<group>"; };
 		8F9F11AB23648B6E00B9490D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F9F11CC23649C6F00B9490D /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		8F9F120223649D8600B9490D /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 		8F9F118823648B6B00B9490D /* Jamii */ = {
 			isa = PBXGroup;
 			children = (
+				8F9F11B723649C5A00B9490D /* fonts */,
 				8F9F118923648B6B00B9490D /* AppDelegate.swift */,
 				8F9F118B23648B6B00B9490D /* ViewController.swift */,
 				8F9F118D23648B6B00B9490D /* Main.storyboard */,
@@ -123,6 +127,15 @@
 				8F9F11AB23648B6E00B9490D /* Info.plist */,
 			);
 			path = JamiiUITests;
+			sourceTree = "<group>";
+		};
+		8F9F11B723649C5A00B9490D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8F9F120223649D8600B9490D /* Montserrat-Medium.otf */,
+				8F9F11CC23649C6F00B9490D /* Montserrat-Regular.otf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F9F119423648B6D00B9490D /* LaunchScreen.storyboard in Resources */,
+				8F9F11F123649C7300B9490D /* Montserrat-Regular.otf in Resources */,
 				8F9F119123648B6D00B9490D /* Assets.xcassets in Resources */,
 				8F9F118F23648B6B00B9490D /* Main.storyboard in Resources */,
 			);

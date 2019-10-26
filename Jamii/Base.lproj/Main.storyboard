@@ -134,7 +134,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYx-3j-Fup" customClass="RoundButton" customModule="Jamii" customModuleProvider="target">
-                                <rect key="frame" x="24" y="595" width="327" height="48"/>
+                                <rect key="frame" x="24" y="587" width="327" height="56"/>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.20392156859999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
                                 <state key="normal" title="SKIP">
@@ -169,7 +169,7 @@
                             <constraint firstItem="I2p-3f-Mln" firstAttribute="bottom" secondItem="QYx-3j-Fup" secondAttribute="bottom" constant="24" id="dZT-hJ-DhP"/>
                             <constraint firstItem="Sw1-fG-0iS" firstAttribute="top" secondItem="P2a-gF-WDJ" secondAttribute="bottom" constant="24" id="dah-Dn-jWf"/>
                             <constraint firstItem="Sw1-fG-0iS" firstAttribute="leading" secondItem="P2a-gF-WDJ" secondAttribute="leading" id="f1z-ck-qed"/>
-                            <constraint firstItem="QYx-3j-Fup" firstAttribute="height" secondItem="Sw1-fG-0iS" secondAttribute="height" id="hiX-Dm-uip"/>
+                            <constraint firstItem="QYx-3j-Fup" firstAttribute="height" secondItem="Sw1-fG-0iS" secondAttribute="height" constant="8" id="hiX-Dm-uip"/>
                             <constraint firstItem="FTD-me-BXX" firstAttribute="leading" secondItem="I2p-3f-Mln" secondAttribute="leading" constant="24" id="mPl-o8-B0x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="I2p-3f-Mln"/>

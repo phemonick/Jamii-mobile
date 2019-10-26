@@ -18,6 +18,12 @@
 		8F9F120623649EAB00B9490D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F120523649EAB00B9490D /* RoundButton.swift */; };
 		8F9F12082364A15000B9490D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F12072364A15000B9490D /* LoginVC.swift */; };
 		8F9F120A2364A1C400B9490D /* OnboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F12092364A1C400B9490D /* OnboardVC.swift */; };
+		8F9F120C2364ADC200B9490D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9F120B2364ADC200B9490D /* Home.storyboard */; };
+		8F9F120E2364B66A00B9490D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F120D2364B66A00B9490D /* HomeVC.swift */; };
+		8F9F12102364B7F500B9490D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F120F2364B7F500B9490D /* HomeTableViewCell.swift */; };
+		8F9F12122364BCA700B9490D /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F12112364BCA700B9490D /* HomeCollectionViewCell.swift */; };
+		8F9F12142364C06F00B9490D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F12132364C06F00B9490D /* UIView+Extension.swift */; };
+		8F9F12162364C22300B9490D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F12152364C22300B9490D /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,12 @@
 		8F9F120523649EAB00B9490D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		8F9F12072364A15000B9490D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8F9F12092364A1C400B9490D /* OnboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardVC.swift; sourceTree = "<group>"; };
+		8F9F120B2364ADC200B9490D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		8F9F120D2364B66A00B9490D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		8F9F120F2364B7F500B9490D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		8F9F12112364BCA700B9490D /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		8F9F12132364C06F00B9490D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		8F9F12152364C22300B9490D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +98,7 @@
 		8F9F117D23648B6B00B9490D = {
 			isa = PBXGroup;
 			children = (
+				8F9F12112364BCA700B9490D /* HomeCollectionViewCell.swift */,
 				8F9F118823648B6B00B9490D /* Jamii */,
 				8F9F119D23648B6E00B9490D /* JamiiTests */,
 				8F9F11A823648B6E00B9490D /* JamiiUITests */,
@@ -116,6 +129,10 @@
 				8F9F119523648B6D00B9490D /* Info.plist */,
 				8F9F12072364A15000B9490D /* LoginVC.swift */,
 				8F9F12092364A1C400B9490D /* OnboardVC.swift */,
+				8F9F120B2364ADC200B9490D /* Home.storyboard */,
+				8F9F120D2364B66A00B9490D /* HomeVC.swift */,
+				8F9F120F2364B7F500B9490D /* HomeTableViewCell.swift */,
+				8F9F12152364C22300B9490D /* Utilities.swift */,
 			);
 			path = Jamii;
 			sourceTree = "<group>";
@@ -151,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				8F9F120523649EAB00B9490D /* RoundButton.swift */,
+				8F9F12132364C06F00B9490D /* UIView+Extension.swift */,
 			);
 			path = "custom views";
 			sourceTree = "<group>";
@@ -260,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F9F119423648B6D00B9490D /* LaunchScreen.storyboard in Resources */,
+				8F9F120C2364ADC200B9490D /* Home.storyboard in Resources */,
 				8F9F11F123649C7300B9490D /* Montserrat-Regular.otf in Resources */,
 				8F9F119123648B6D00B9490D /* Assets.xcassets in Resources */,
 				8F9F118F23648B6B00B9490D /* Main.storyboard in Resources */,
@@ -289,9 +308,14 @@
 			files = (
 				8F9F120623649EAB00B9490D /* RoundButton.swift in Sources */,
 				8F9F118C23648B6B00B9490D /* ViewController.swift in Sources */,
+				8F9F12102364B7F500B9490D /* HomeTableViewCell.swift in Sources */,
+				8F9F12142364C06F00B9490D /* UIView+Extension.swift in Sources */,
 				8F9F120A2364A1C400B9490D /* OnboardVC.swift in Sources */,
+				8F9F120E2364B66A00B9490D /* HomeVC.swift in Sources */,
 				8F9F12082364A15000B9490D /* LoginVC.swift in Sources */,
 				8F9F118A23648B6B00B9490D /* AppDelegate.swift in Sources */,
+				8F9F12162364C22300B9490D /* Utilities.swift in Sources */,
+				8F9F12122364BCA700B9490D /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMB2A72R2F;
 				INFOPLIST_FILE = Jamii/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -484,6 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMB2A72R2F;
 				INFOPLIST_FILE = Jamii/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

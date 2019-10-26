@@ -6,4 +6,10 @@
 //  Copyright © 2019 Godwin Olorunshola. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class HomeCollectionViewCell : UICollectionViewCell{
+    
+    @IBOutlet weak var containerView : UIView!
+    
+}

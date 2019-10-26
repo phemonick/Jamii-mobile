@@ -17,6 +17,7 @@
 		8F9F11F123649C7300B9490D /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F9F11CC23649C6F00B9490D /* Montserrat-Regular.otf */; };
 		8F9F120623649EAB00B9490D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F120523649EAB00B9490D /* RoundButton.swift */; };
 		8F9F12082364A15000B9490D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F12072364A15000B9490D /* LoginVC.swift */; };
+		8F9F120A2364A1C400B9490D /* OnboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F12092364A1C400B9490D /* OnboardVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		8F9F120223649D8600B9490D /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
 		8F9F120523649EAB00B9490D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		8F9F12072364A15000B9490D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		8F9F12092364A1C400B9490D /* OnboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				8F9F119223648B6D00B9490D /* LaunchScreen.storyboard */,
 				8F9F119523648B6D00B9490D /* Info.plist */,
 				8F9F12072364A15000B9490D /* LoginVC.swift */,
+				8F9F12092364A1C400B9490D /* OnboardVC.swift */,
 			);
 			path = Jamii;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			files = (
 				8F9F120623649EAB00B9490D /* RoundButton.swift in Sources */,
 				8F9F118C23648B6B00B9490D /* ViewController.swift in Sources */,
+				8F9F120A2364A1C400B9490D /* OnboardVC.swift in Sources */,
 				8F9F12082364A15000B9490D /* LoginVC.swift in Sources */,
 				8F9F118A23648B6B00B9490D /* AppDelegate.swift in Sources */,
 			);

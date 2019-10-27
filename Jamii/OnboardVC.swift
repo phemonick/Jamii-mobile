@@ -15,7 +15,5 @@ class OnboardVC : UIViewController{
         super.viewDidLoad()
     }
     
-    @IBAction func didTouchGetStarted(_ sender: Any) {
-        present(LoginVC(), animated: true, completion: nil)
-    }
+    
 }

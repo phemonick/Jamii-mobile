@@ -6,4 +6,12 @@
 //  Copyright © 2019 Godwin Olorunshola. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+
+extension UITextField{
+    
+    func getText() -> String{
+        return self.text ?? ""
+    }
+}

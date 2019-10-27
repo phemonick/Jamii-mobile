@@ -22,12 +22,26 @@ class LoginVC : UIViewController{
     
     @IBAction func didTouchLogin(_ sender: Any) {
         
+        if emailTF.getText().count > 5 && passwordTF.getText().count > 3 {
+//            showLoader()
+            Networker.shared.post(url: URLConstants.login, params: ["email" : emailTF.getText(), "password" : passwordTF.getText()]) { [weak self](result : Result<User, APIError>) in
+//                self?.hideLoader()
+                switch result{
+                case .success(let user):
+                    print(user)
+                case .failure(.badURL), .failure(.requestFailed), .failure(.jsonConversionFailure), .failure(.invalidData), .failure(.responseUnsuccessful):
+                 self?.showAlert(withTitle: "Error", withMessage: "The request couldnt be processed")
+                }
+            }
+        }else{
+            showAlert(withTitle: "Error", withMessage: "Email or Password Invalid")
+        }
+        
+        
     }
     
     @IBAction func didTouchSkip(_ sender: Any) {
-        Networker().get(url: "") { (result : Result<Model, APIError>) in
-            
-        }
+        
         
     }
     

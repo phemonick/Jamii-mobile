@@ -11,6 +11,14 @@ import UIKit
 class HomeTableViewCell : UITableViewCell{
     
     @IBOutlet weak var homeCollectionView : UICollectionView!
+    var vc : UIViewController!
+    var event : Event?{
+        didSet{
+            homeCollectionView.reloadData()
+        }
+    }
+    @IBOutlet weak var eventType: UILabel!
+
     
     
     override func layoutSubviews() {
@@ -29,14 +37,19 @@ class HomeTableViewCell : UITableViewCell{
 extension HomeTableViewCell : UICollectionViewDataSource, UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return event?.payload?.count ?? 0
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
         cell.elevate()
+//        cell.event = event?.payload?[indexPath.row]
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        vc.performSegue(withIdentifier: "ToDetailsVC", sender: nil)
     }
     
 }

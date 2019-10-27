@@ -30,6 +30,13 @@
 		8F9F121E23657A5A00B9490D /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F121D23657A5A00B9490D /* ApiError.swift */; };
 		8F9F12202365ABEE00B9490D /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F121F2365ABEE00B9490D /* PaddingLabel.swift */; };
 		8FC2AF592365B28A00166233 /* EventDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2AF582365B28A00166233 /* EventDetailsVC.swift */; };
+		8FC2AF5B2365C57300166233 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2AF5A2365C57300166233 /* UIViewController+Extension.swift */; };
+		8FC2AF5E2365C68200166233 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2AF5D2365C68200166233 /* User.swift */; };
+		8FC2AF602365D32A00166233 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2AF5F2365D32A00166233 /* UITextField+Extension.swift */; };
+		8FC2AF622365D62B00166233 /* UrlConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2AF612365D62B00166233 /* UrlConstants.swift */; };
+		8FC2AF642365D87700166233 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2AF632365D87700166233 /* CreateAccountVC.swift */; };
+		8FC2AF662365E84C00166233 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2AF652365E84C00166233 /* UserDefaults+Extension.swift */; };
+		8FC2AF682365ED4900166233 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2AF672365ED4900166233 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +87,13 @@
 		8F9F121D23657A5A00B9490D /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		8F9F121F2365ABEE00B9490D /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		8FC2AF582365B28A00166233 /* EventDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsVC.swift; sourceTree = "<group>"; };
+		8FC2AF5A2365C57300166233 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		8FC2AF5D2365C68200166233 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8FC2AF5F2365D32A00166233 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		8FC2AF612365D62B00166233 /* UrlConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlConstants.swift; sourceTree = "<group>"; };
+		8FC2AF632365D87700166233 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		8FC2AF652365E84C00166233 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		8FC2AF672365ED4900166233 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +124,6 @@
 		8F9F117D23648B6B00B9490D = {
 			isa = PBXGroup;
 			children = (
-				8FC2AF582365B28A00166233 /* EventDetailsVC.swift */,
 				8F9F118823648B6B00B9490D /* Jamii */,
 				8F9F119D23648B6E00B9490D /* JamiiTests */,
 				8F9F11A823648B6E00B9490D /* JamiiUITests */,
@@ -131,9 +144,11 @@
 		8F9F118823648B6B00B9490D /* Jamii */ = {
 			isa = PBXGroup;
 			children = (
+				8FC2AF5C2365C67200166233 /* model */,
 				8F9F120423649E9200B9490D /* custom views */,
 				8F9F11B723649C5A00B9490D /* fonts */,
 				8F9F118923648B6B00B9490D /* AppDelegate.swift */,
+				8FC2AF582365B28A00166233 /* EventDetailsVC.swift */,
 				8F9F118B23648B6B00B9490D /* ViewController.swift */,
 				8F9F118D23648B6B00B9490D /* Main.storyboard */,
 				8F9F119023648B6D00B9490D /* Assets.xcassets */,
@@ -151,6 +166,9 @@
 				8F9F121B236579C800B9490D /* Networker.swift */,
 				8F9F121D23657A5A00B9490D /* ApiError.swift */,
 				8F9F121F2365ABEE00B9490D /* PaddingLabel.swift */,
+				8FC2AF612365D62B00166233 /* UrlConstants.swift */,
+				8FC2AF632365D87700166233 /* CreateAccountVC.swift */,
+				8FC2AF652365E84C00166233 /* UserDefaults+Extension.swift */,
 			);
 			path = Jamii;
 			sourceTree = "<group>";
@@ -187,8 +205,19 @@
 			children = (
 				8F9F120523649EAB00B9490D /* RoundButton.swift */,
 				8F9F12132364C06F00B9490D /* UIView+Extension.swift */,
+				8FC2AF5A2365C57300166233 /* UIViewController+Extension.swift */,
+				8FC2AF5F2365D32A00166233 /* UITextField+Extension.swift */,
 			);
 			path = "custom views";
+			sourceTree = "<group>";
+		};
+		8FC2AF5C2365C67200166233 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8FC2AF5D2365C68200166233 /* User.swift */,
+				8FC2AF672365ED4900166233 /* Event.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FC2AF602365D32A00166233 /* UITextField+Extension.swift in Sources */,
 				8FC2AF592365B28A00166233 /* EventDetailsVC.swift in Sources */,
 				8F9F120623649EAB00B9490D /* RoundButton.swift in Sources */,
 				8F9F118C23648B6B00B9490D /* ViewController.swift in Sources */,
@@ -331,13 +361,19 @@
 				8F9F12142364C06F00B9490D /* UIView+Extension.swift in Sources */,
 				8F9F121A23650D9000B9490D /* ExploreTableCell.swift in Sources */,
 				8F9F120A2364A1C400B9490D /* OnboardVC.swift in Sources */,
+				8FC2AF682365ED4900166233 /* Event.swift in Sources */,
 				8F9F12202365ABEE00B9490D /* PaddingLabel.swift in Sources */,
 				8F9F120E2364B66A00B9490D /* HomeVC.swift in Sources */,
 				8F9F121E23657A5A00B9490D /* ApiError.swift in Sources */,
+				8FC2AF642365D87700166233 /* CreateAccountVC.swift in Sources */,
 				8F9F12082364A15000B9490D /* LoginVC.swift in Sources */,
 				8F9F121823650BAE00B9490D /* ExploreVC.swift in Sources */,
+				8FC2AF662365E84C00166233 /* UserDefaults+Extension.swift in Sources */,
 				8F9F118A23648B6B00B9490D /* AppDelegate.swift in Sources */,
 				8F9F12162364C22300B9490D /* Utilities.swift in Sources */,
+				8FC2AF5E2365C68200166233 /* User.swift in Sources */,
+				8FC2AF5B2365C57300166233 /* UIViewController+Extension.swift in Sources */,
+				8FC2AF622365D62B00166233 /* UrlConstants.swift in Sources */,
 				8F9F12122364BCA700B9490D /* HomeCollectionViewCell.swift in Sources */,
 				8F9F121C236579C800B9490D /* Networker.swift in Sources */,
 			);

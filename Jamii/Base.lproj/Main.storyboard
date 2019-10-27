@@ -52,7 +52,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="didTouchGetStarted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bmU-ow-p3S"/>
+                                    <segue destination="Tuw-Ms-oU8" kind="show" id="UMC-hm-vEe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -140,6 +140,7 @@
                                 </state>
                                 <connections>
                                     <action selector="didTouchCreateAccount:" destination="Tuw-Ms-oU8" eventType="touchUpInside" id="4rk-Ww-EiV"/>
+                                    <segue destination="Vmr-IE-GKf" kind="show" id="0pW-sk-u7E"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYx-3j-Fup" customClass="RoundButton" customModule="Jamii" customModuleProvider="target">
@@ -156,6 +157,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="didTouchSkip:" destination="Tuw-Ms-oU8" eventType="touchUpInside" id="5do-V2-Kwc"/>
+                                    <segue destination="G0C-sc-OXY" kind="show" id="3gh-Tf-mhM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -189,16 +191,25 @@
                     <connections>
                         <outlet property="emailTF" destination="Ec6-4B-4rb" id="KO2-ed-D9j"/>
                         <outlet property="passwordTF" destination="P2a-gF-WDJ" id="nou-5U-CvK"/>
+                        <segue destination="G0C-sc-OXY" kind="show" id="Qjq-S4-W1O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LW1-1j-rwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="767" y="27"/>
         </scene>
-        <!--LoginVC-->
+        <!--Home-->
+        <scene sceneID="ASs-zN-zHh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="G0C-sc-OXY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDJ-aS-yX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569" y="-497"/>
+        </scene>
+        <!--Create AccountVC-->
         <scene sceneID="Kh0-WO-uKQ">
             <objects>
-                <viewController id="Vmr-IE-GKf" customClass="LoginVC" customModule="Jamii" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vmr-IE-GKf" customClass="CreateAccountVC" customModule="Jamii" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hhe-6I-dFJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -249,7 +260,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="didTouchLogin:" destination="Vmr-IE-GKf" eventType="touchUpInside" id="quG-vf-wcc"/>
+                                    <action selector="didTouchCreateAccount:" destination="Vmr-IE-GKf" eventType="touchUpInside" id="NYj-l9-LX8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDk-5s-HfU">
@@ -259,7 +270,7 @@
                                     <color key="titleColor" red="0.22352941179999999" green="0.20392156859999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="didTouchCreateAccount:" destination="Vmr-IE-GKf" eventType="touchUpInside" id="7rK-wL-lWy"/>
+                                    <segue destination="Tuw-Ms-oU8" kind="show" id="5T1-aF-6sm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1c-dg-Peu" customClass="RoundButton" customModule="Jamii" customModuleProvider="target">
@@ -275,7 +286,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="didTouchSkip:" destination="Vmr-IE-GKf" eventType="touchUpInside" id="PiK-CZ-CwW"/>
+                                    <action selector="didTouchSkipRegistration:" destination="Vmr-IE-GKf" eventType="touchUpInside" id="2Dc-Vn-PLJ"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1P6-Hk-kYp">
@@ -322,16 +333,23 @@
                     </view>
                     <connections>
                         <outlet property="emailTF" destination="FI5-F8-gVu" id="lDQ-KE-wIk"/>
+                        <outlet property="fullNameTF" destination="1P6-Hk-kYp" id="74c-dD-Vf0"/>
                         <outlet property="passwordTF" destination="eL8-Cn-2Tl" id="4U6-Za-LpO"/>
+                        <segue destination="G0C-sc-OXY" kind="show" identifier="ToHome" id="Tdv-RH-ZRG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jva-Lb-ifh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1622" y="27"/>
+            <point key="canvasLocation" x="2046" y="137"/>
         </scene>
     </scenes>
     <resources>
         <image name="logo" width="64" height="64"/>
         <image name="volunteer" width="1351" height="750"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="0pW-sk-u7E"/>
+        <segue reference="3gh-Tf-mhM"/>
+        <segue reference="5T1-aF-6sm"/>
+    </inferredMetricsTieBreakers>
 </document>

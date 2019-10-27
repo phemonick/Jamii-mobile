@@ -25,9 +25,17 @@ class LoginVC : UIViewController{
     }
     
     @IBAction func didTouchSkip(_ sender: Any) {
+        Networker().get(url: "") { (result : Result<Model, APIError>) in
+            
+        }
         
     }
     
     @IBAction func didTouchCreateAccount(_ sender: Any) {
     }
+}
+
+
+class Model : Decodable{
+    
 }
